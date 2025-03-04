@@ -1,6 +1,6 @@
 ## teavault - the tiny encryption algorithm (tea)-based compile-time string encryption.
 
-a header providing compile-time encrypted string functionality using the tiny encryption algorithm (tea).
+a header-only compile-time string encryption functionality using the tiny encryption algorithm (tea).
 
 ## features
 - compile-time encryption to resist reverse-engineering
