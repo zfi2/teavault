@@ -1,4 +1,5 @@
-# teavault | the tiny encryption algorithm (tea)-based compile-time string encryption.
+# teavault
+## the tiny encryption algorithm (tea)-based compile-time string encryption.
 
 a header providing compile-time encrypted string functionality using the tiny encryption algorithm (tea).
 
