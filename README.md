@@ -1,6 +1,6 @@
-# teavault | the tiny encryption algorithm (tea)-based compile-time string encryption.
+## teavault - the tiny encryption algorithm (tea)-based compile-time string encryption.
 
-a header providing compile-time encrypted string functionality using the tiny encryption algorithm (tea).
+a header-only compile-time string encryption functionality using the tiny encryption algorithm (tea).
 
 ## features
 - compile-time encryption to resist reverse-engineering
@@ -18,7 +18,7 @@ the encryption uses the tea algorithm with a 128-bit key. by default, the key is
 
 int main() {
     // automatic decryption with default key generation
-    auto decrypted_str = tea_str("hello, security world!");
+    auto decrypted_str = tea_str("automatically decrypted string!");
 
     // manual decryption object
     auto encrypted_obj = tea_str_m("manually decrypted string");
