@@ -37,7 +37,7 @@ namespace tea {
 
         // decrypts a 64-bit block
         static constexpr uint64_t decrypt_block(uint32_t v0, uint32_t v1, const std::array<uint32_t, 4>& key) {
-            uint32_t sum = DELTA * ROUNDS;
+            uint32_t sum = static_cast<uint32_t>(DELTA * ROUNDS);
             for (size_t i = 0; i < ROUNDS; ++i) {
                 v1 -= ((v0 << 4) + key[2]) ^ (v0 + sum) ^ ((v0 >> 5) + key[3]);
                 v0 -= ((v1 << 4) + key[0]) ^ (v1 + sum) ^ ((v1 >> 5) + key[1]);
